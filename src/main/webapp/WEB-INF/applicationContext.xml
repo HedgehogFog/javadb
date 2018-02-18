@@ -14,9 +14,9 @@
         <!-- Database connection settings -->
         <property name="driverClassName" value="org.postgresql.Driver" />
 
-        <property name="url" value="jdbc:postgresql://ec2-23-21-227-73.compute-1.amazonaws.com:5432/dedu2912daiudm" />
-        <property name="username" value="jochelxkknfqhb" />
-        <property name="password" value="464e38c8d277389ddd3363bcc143687673dd34891eba07d0c7ca93cbff3ff2af" />
+        <property name="url" value="jdbc:postgres://gqyolxhmijuebk:07081e2de173ee23da8ce3dc5d172e195daa94a8d66710664b4146aee64935eb@ec2-79-125-117-53.eu-west-1.compute.amazonaws.com:5432/dat2pqhib3c95a" />
+        <property name="username" value="gqyolxhmijuebk" />
+        <property name="password" value="07081e2de173ee23da8ce3dc5d172e195daa94a8d66710664b4146aee64935eb" />
 
 
         <!--<property name="url" value="jdbc:postgresql://localhost:5432/camarketdb" />
