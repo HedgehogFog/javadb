@@ -48,13 +48,8 @@ public class RegisterController {
 
         List<Customer> customerList = customerService.getAllCustomers(offset, maxResults);
         for (int i=0; i< customerList.size(); i++) {
-            if (customer.getCustomerEmail().equals(customerList.get(i).getCustomerEmail())) {
-                model.addAttribute("emailMsg", "Email already existed");
-
-                return "registerCustomer";
-            }
             if (customer.getUsername().equals(customerList.get(i).getUsername())) {
-                model.addAttribute("usernameMsg", "Username already existed");
+                model.addAttribute("usernameMsg", "Busy, think ahead");
 
                 return "registerCustomer";
             }
