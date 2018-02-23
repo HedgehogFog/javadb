@@ -23,6 +23,9 @@
         <a class="page-scroll" href="<c:url value="/welcome" />">Login</a>
     </li>
     <li>
+        <a class="page-scroll" href="<c:url value="/login" />">OldLogin</a>
+    </li>
+    <li>
         <a class="page-scroll" href="<c:url value="/register"/>#services">Register</a>
     </li>
 </c:if>

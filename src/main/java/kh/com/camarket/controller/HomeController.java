@@ -19,7 +19,7 @@ public class HomeController {
     }
 
     @RequestMapping("/welcome")
-    public String login(@RequestParam(value = "error", required = false) String error,
+    public String welcome(@RequestParam(value = "error", required = false) String error,
                         @RequestParam(value = "logout", required = false) String logout,
                         Model model) {
         if (error != null) {
@@ -33,4 +33,18 @@ public class HomeController {
         return "welcome";
     }
 
+    @RequestMapping("/login")
+    public String login(@RequestParam(value = "error", required = false) String error,
+                        @RequestParam(value = "logout", required = false) String logout,
+                        Model model) {
+        if (error != null) {
+            model.addAttribute("error", "Invalid username and password!");
+        }
+
+        if (logout != null) {
+            model.addAttribute("msg", "You have been logout successfully");
+        }
+
+        return "login";
+    }
 }
