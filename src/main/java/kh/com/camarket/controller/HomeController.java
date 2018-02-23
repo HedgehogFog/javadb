@@ -18,7 +18,7 @@ public class HomeController {
         return "start";
     }
 
-    @RequestMapping("/login")
+    @RequestMapping("/welcome")
     public String login(@RequestParam(value = "error", required = false) String error,
                         @RequestParam(value = "logout", required = false) String logout,
                         Model model) {
@@ -30,7 +30,7 @@ public class HomeController {
             model.addAttribute("msg", "You have been logout successfully");
         }
 
-        return "login";
+        return "welcome";
     }
 
 }
