@@ -55,6 +55,7 @@ public class RegisterController {
             }
         }
 
+        System.out.println("REGGGG");
         customer.setEnabled(true);
 
         customerService.addCustomer(customer);
