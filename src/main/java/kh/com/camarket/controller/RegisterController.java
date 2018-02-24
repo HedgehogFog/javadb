@@ -43,7 +43,7 @@ public class RegisterController {
                                        Integer offset, Integer maxResults) {
 
         if (result.hasErrors()) {
-            return "registerCustomer";
+            return "reg";
         }
 
         List<Customer> customerList = customerService.getAllCustomers(offset, maxResults);
@@ -51,7 +51,7 @@ public class RegisterController {
             if (customer.getUsername().equals(customerList.get(i).getUsername())) {
                 model.addAttribute("usernameMsg", "Busy, think ahead");
 
-                return "registerCustomer";
+                return "reg";
             }
         }
 
@@ -59,6 +59,6 @@ public class RegisterController {
 
         customerService.addCustomer(customer);
 
-        return "registerCustomerSuccess";
+        return "regSuccess";
     }
 }

@@ -20,10 +20,7 @@
 </c:if>
 <c:if test="${pageContext.request.userPrincipal.name == null}">
     <li>
-        <a class="page-scroll" href="<c:url value="/welcome" />">Login</a>
-    </li>
-    <li>
-        <a class="page-scroll" href="<c:url value="/login" />">OldLogin</a>
+        <a class="page-scroll" href="<c:url value="/login" />">Login</a>
     </li>
     <li>
         <a class="page-scroll" href="<c:url value="/register"/>#services">Register</a>

@@ -38,11 +38,11 @@ public class HomeController {
                         @RequestParam(value = "logout", required = false) String logout,
                         Model model) {
         if (error != null) {
-            model.addAttribute("error", "Invalid username and password!");
+            model.addAttribute("error", "What is xren? Change usename or pass.");
         }
 
         if (logout != null) {
-            model.addAttribute("msg", "You have been logout successfully");
+            model.addAttribute("msg", "Bye-bye! We are not you wait!");
         }
 
         return "login";
